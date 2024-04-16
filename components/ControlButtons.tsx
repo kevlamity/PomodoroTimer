@@ -11,11 +11,11 @@ const ControlButtons: React.FC<ControlButtonsProps> = ({ isRunning, startTimer, 
   return (
     <Stack direction="row" spacing={4} justify="center">
       {isRunning ? (
-        <Button colorScheme="red" onClick={pauseTimer}>Pause</Button>
+        <Button colorScheme="red" onClick={pauseTimer} size="lg">Pause</Button>
       ) : (
-        <Button colorScheme="green" onClick={startTimer}>Start</Button>
+        <Button colorScheme="green" onClick={startTimer} size="lg">Start</Button>
       )}
-      <Button colorScheme="yellow" onClick={resetTimer}>Reset</Button>
+      <Button colorScheme="yellow" textColor="white" onClick={resetTimer} size="lg">Reset</Button>
     </Stack>
   );
 };
